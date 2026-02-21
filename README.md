@@ -1,2 +1,1 @@
-# TayTaysPharmacyCheatSheet
-Everything Pharmacy
+Pharm Bible
