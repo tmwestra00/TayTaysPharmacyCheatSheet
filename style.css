@@ -1,14 +1,15 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #fff5f8;
-  color: #1a1a1a;
+  background-color: #fdf7f9; /* very soft blush */
+  color: #2a2a2a;
 }
 
+/* Header */
 header {
-  background-color: #d81b60;
+  background-color: #c48fa1; /* muted dusty rose */
   color: white;
-  padding: 20px;
+  padding: 22px;
 }
 
 .header-container {
@@ -18,8 +19,9 @@ header {
 }
 
 .logo {
-  font-size: 40px;
-  margin-right: 15px;
+  font-size: 38px;
+  margin-right: 14px;
+  opacity: 0.95;
 }
 
 .title-block {
@@ -28,40 +30,46 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .subtitle {
-  margin-top: 5px;
-  font-size: 14px;
-  opacity: 0.9;
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.85;
 }
 
+/* Search bar */
 #searchBar {
-  margin-top: 15px;
+  margin-top: 14px;
   padding: 10px;
   width: 60%;
   max-width: 500px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: none;
   font-size: 14px;
 }
 
+/* Layout */
 .container {
   display: flex;
 }
 
+/* Sidebar */
 .sidebar {
   width: 260px;
-  background-color: #ffe3ec;
-  padding: 20px;
-  border-right: 1px solid #f8bbd0;
+  background-color: #f6e6ec; /* soft rose tint */
+  padding: 22px;
+  border-right: 1px solid #e8cfd8;
   height: calc(100vh - 120px);
   overflow-y: auto;
 }
 
 .sidebar h3 {
   margin-top: 0;
+  font-weight: 600;
 }
 
 .sidebar ul {
@@ -73,25 +81,29 @@ header h1 {
   padding: 6px 0;
   cursor: pointer;
   font-size: 14px;
+  transition: color 0.2s ease;
 }
 
 .sidebar li strong {
   display: block;
-  margin-top: 15px;
-  font-size: 13px;
+  margin-top: 18px;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #ad1457;
+  color: #9e6d7c;
+  letter-spacing: 0.5px;
 }
 
 .sidebar li:hover {
-  color: #c2185b;
+  color: #a15c73;
 }
 
+/* Main content */
 .content {
   flex: 1;
-  padding: 30px;
+  padding: 35px;
 }
 
 .content h2 {
   margin-top: 0;
+  font-weight: 600;
 }
