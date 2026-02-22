@@ -30,69 +30,7 @@ header {
   font-weight: 500;
 }
 
-#searchBar {
-  margin-top: 15px;
-  padding: 12px;
-  width: 60%;
-  max-width: 520px;
-  border-radius: 25px;
-  border: none;
-  font-size: 14px;
-}
-
-/* DASHBOARD */
-.dashboard {
-  padding: 50px 80px;
-}
-
-.system {
-  margin-bottom: 60px;
-}
-
-.system h2 {
-  font-size: 26px;
-  color: #a05470;
-  margin-bottom: 15px;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.disease-card {
-  background-color: #f7dce5;
-  padding: 30px;
-  border-radius: 18px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  transition: all 0.25s ease;
-}
-
-.disease-card:hover {
-  background-color: #eec2d1;
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
-}
-
-.show-more-card {
-  background-color: transparent;
-  border: 2px dashed #d38fa7;
-  color: #a05470;
-  font-weight: 600;
-}
-
-.show-more-card:hover {
-  background-color: #f7dce5;
-}
-
-/* DISEASE PAGE */
+/* PAGE LAYOUT */
 .disease-page {
   padding: 50px 80px;
 }
@@ -103,17 +41,115 @@ header {
 }
 
 .disease-page h3 {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
+/* GUIDELINES */
 .guidelines li {
   margin-bottom: 6px;
 }
 
-.drug-block {
+.guidelines a {
+  text-decoration: none;
+  color: #a05470;
+}
+
+.guidelines a:hover {
+  text-decoration: underline;
+}
+
+/* IMAGE PLACEHOLDER */
+.image-placeholder {
   background-color: #f7dce5;
   padding: 25px;
-  border-radius: 15px;
-  margin-top: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin: 15px 0 30px 0;
+  text-align: center;
+  font-style: italic;
+  color: #8a3f59;
+}
+
+/* FLOWCHART */
+.flowchart {
+  margin: 25px 0;
+}
+
+.flow-box {
+  background-color: #f7dce5;
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.flow-box.small {
+  max-width: 400px;
+  font-size: 14px;
+}
+
+.flow-arrow {
+  text-align: center;
+  font-size: 20px;
+  margin: 8px 0;
+  color: #a05470;
+}
+
+.branch-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.flow-branch {
+  text-align: center;
+  margin: 10px;
+}
+
+.branch-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #a05470;
+}
+
+/* DRUG TABLE */
+.drug-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  background-color: #f7dce5; /* LIGHT PINK BACKGROUND */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* HEADER ROW */
+.drug-table th {
+  background-color: #eec2d1; /* darker pink header */
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  border-right: 1px solid #d38fa7; /* column separator */
+}
+
+/* DATA CELLS */
+.drug-table td {
+  padding: 14px;
+  vertical-align: top;
+  border-right: 1px solid #e3a9bc; /* vertical column lines */
+  border-top: 1px solid #e3a9bc;   /* horizontal row lines */
+}
+
+/* Remove last column border */
+.drug-table th:last-child,
+.drug-table td:last-child {
+  border-right: none;
+}
+
+/* Subtle hover effect */
+.drug-table tr:hover td {
+  background-color: #fbe6ee;
 }
