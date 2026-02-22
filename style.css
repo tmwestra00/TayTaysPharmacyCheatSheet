@@ -8,24 +8,47 @@ body {
 /* HEADER */
 header {
   background: linear-gradient(135deg, #f2c6d6, #d38fa7, #c06c8d);
-  padding: 40px 20px 25px 20px;
+  padding: 35px 20px 20px 20px;
   text-align: center;
+  position: relative;
 }
 
+/* Back Button */
+.back-button {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  background-color: white;
+  color: #a05470;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #f7dce5;
+  transform: translateY(-2px);
+}
+
+/* Main Title (40% smaller) */
 .main-title {
   font-family: 'Parisienne', cursive;
-  font-size: 145px;
+  font-size: 90px;   /* reduced from 145px */
   margin: 0;
   color: white;
   text-shadow:
-    0 0 15px rgba(255,255,255,0.7),
-    0 0 30px rgba(255,255,255,0.5),
-    4px 6px 18px rgba(0,0,0,0.25);
+    0 0 12px rgba(255,255,255,0.7),
+    3px 4px 12px rgba(0,0,0,0.25);
 }
 
+/* Subtitle larger */
 .subtitle {
-  margin-top: 8px;
-  font-size: 22px;
+  margin-top: 10px;
+  font-size: 26px;   /* increased */
   color: white;
   font-weight: 500;
 }
@@ -120,36 +143,32 @@ header {
   border-collapse: collapse;
   margin-top: 15px;
   margin-bottom: 40px;
-  background-color: #f7dce5; /* LIGHT PINK BACKGROUND */
+  background-color: #f7dce5;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
 
-/* HEADER ROW */
 .drug-table th {
-  background-color: #eec2d1; /* darker pink header */
+  background-color: #eec2d1;
   padding: 14px;
   text-align: left;
   font-weight: 600;
-  border-right: 1px solid #d38fa7; /* column separator */
+  border-right: 1px solid #d38fa7;
 }
 
-/* DATA CELLS */
 .drug-table td {
   padding: 14px;
   vertical-align: top;
-  border-right: 1px solid #e3a9bc; /* vertical column lines */
-  border-top: 1px solid #e3a9bc;   /* horizontal row lines */
+  border-right: 1px solid #e3a9bc;
+  border-top: 1px solid #e3a9bc;
 }
 
-/* Remove last column border */
 .drug-table th:last-child,
 .drug-table td:last-child {
   border-right: none;
 }
 
-/* Subtle hover effect */
 .drug-table tr:hover td {
   background-color: #fbe6ee;
 }
