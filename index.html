@@ -4,23 +4,18 @@
   <meta charset="UTF-8">
   <title>The Pharm Bible</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Allura&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="header-container">
-    <div class="logo">
-      🌸
-    </div>
-    <div class="title-block">
-      <h1>The Pharm Bible</h1>
-      <p class="subtitle">A Clinical Therapeutics Knowledge System</p>
-      <input type="text" id="searchBar" placeholder="Search drugs, side effects, guidelines..." onkeyup="searchContent()">
-    </div>
+  <div class="title-block">
+    <h1 class="main-title">The Pharm Bible</h1>
+    <p class="subtitle">A Clinical Therapeutics Knowledge System</p>
+    <input type="text" id="searchBar" placeholder="Search drugs, side effects, guidelines...">
   </div>
 </header>
 
@@ -66,16 +61,6 @@
   </main>
 
 </div>
-
-<script>
-function searchContent() {
-  let input = document.getElementById("searchBar").value.toLowerCase();
-  let content = document.body.innerText.toLowerCase();
-  if (content.includes(input)) {
-    console.log("Match found");
-  }
-}
-</script>
 
 </body>
 </html>
