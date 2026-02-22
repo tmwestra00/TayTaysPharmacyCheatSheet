@@ -7,47 +7,34 @@ body {
 
 /* Header */
 header {
-  background-color: #c48fa1;
-  color: white;
-  padding: 22px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  font-size: 36px;
-  margin-right: 14px;
-}
-
-.title-block {
+  background: linear-gradient(135deg, #e8b7c5, #d89ab0);
+  padding: 60px 20px 45px 20px;
   text-align: center;
 }
 
-header h1 {
+.main-title {
+  font-family: 'Allura', cursive;
+  font-size: 110px;
   margin: 0;
-  font-size: 34px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 12px rgba(0,0,0,0.15);
 }
 
 .subtitle {
-  margin-top: 6px;
-  font-size: 13px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
   opacity: 0.9;
 }
 
 /* Search bar */
 #searchBar {
-  margin-top: 14px;
-  padding: 10px;
+  margin-top: 25px;
+  padding: 12px;
   width: 60%;
   max-width: 500px;
-  border-radius: 10px;
+  border-radius: 25px;
   border: none;
   font-size: 14px;
 }
@@ -63,14 +50,13 @@ header h1 {
   background-color: #f6e6ec;
   padding: 22px;
   border-right: 1px solid #e8cfd8;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 200px);
   overflow-y: auto;
 }
 
 .sidebar h3 {
   margin-top: 0;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
 }
 
 .sidebar ul {
@@ -106,6 +92,4 @@ header h1 {
 
 .content h2 {
   margin-top: 0;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
 }
