@@ -1,174 +1,242 @@
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #fdf7f9;
-  color: #2a2a2a;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Pharm Bible</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* HEADER */
-header {
-  background: linear-gradient(135deg, #f2c6d6, #d38fa7, #c06c8d);
-  padding: 35px 20px 20px 20px;
-  text-align: center;
-  position: relative;
-}
+<header>
+  <h1 class="main-title">🎀 The Pharm Bible 🎀</h1>
+  <p class="subtitle">Taylor’s Very Serious Drug Reference Center</p>
+</header>
 
-/* Back Button */
-.back-button {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  background-color: white;
-  color: #a05470;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: all 0.2s ease;
-}
+<main class="dashboard">
 
-.back-button:hover {
-  background-color: #f7dce5;
-  transform: translateY(-2px);
-}
+  <!-- ================= CLINICAL SYSTEMS ================= -->
 
-/* Main Title (40% smaller) */
-.main-title {
-  font-family: 'Parisienne', cursive;
-  font-size: 90px;   /* reduced from 145px */
-  margin: 0;
-  color: white;
-  text-shadow:
-    0 0 12px rgba(255,255,255,0.7),
-    3px 4px 12px rgba(0,0,0,0.25);
-}
+  <h2 class="section-divider">🩺 Clinical Systems</h2>
 
-/* Subtitle larger */
-.subtitle {
-  margin-top: 10px;
-  font-size: 26px;   /* increased */
-  color: white;
-  font-weight: 500;
-}
+  <!-- Cardiology -->
+  <section class="system">
+    <h2>❤️ Cardiology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Hypertension</a>
+      <a href="#" class="disease-card">Heart Failure</a>
+      <a href="#" class="disease-card">Atrial Fibrillation</a>
+      <a href="#" class="disease-card">Coronary Artery Disease / ACS</a>
+      <a href="#" class="disease-card">Anticoagulation Management</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-/* PAGE LAYOUT */
-.disease-page {
-  padding: 50px 80px;
-}
+  <!-- Endocrinology -->
+  <section class="system">
+    <h2>🧠 Endocrinology</h2>
+    <div class="card-grid">
+      <a href="diabetes.html" class="disease-card">Diabetes Mellitus</a>
+      <a href="#" class="disease-card">Hypothyroidism</a>
+      <a href="#" class="disease-card">Hyperthyroidism</a>
+      <a href="#" class="disease-card">Adrenal Disorders</a>
+      <a href="#" class="disease-card">PCOS</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.disease-page h2 {
-  margin-top: 40px;
-  color: #a05470;
-}
+  <!-- Pulmonology -->
+  <section class="system">
+    <h2>🫁 Pulmonology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Asthma</a>
+      <a href="#" class="disease-card">COPD</a>
+      <a href="#" class="disease-card">Community-Acquired Pneumonia</a>
+      <a href="#" class="disease-card">Pulmonary Embolism</a>
+      <a href="#" class="disease-card">ARDS</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.disease-page h3 {
-  margin-top: 25px;
-}
+  <!-- Infectious Disease -->
+  <section class="system">
+    <h2>🦠 Infectious Disease</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">UTI</a>
+      <a href="#" class="disease-card">SSTI</a>
+      <a href="#" class="disease-card">Sepsis</a>
+      <a href="#" class="disease-card">HIV</a>
+      <a href="#" class="disease-card">Tuberculosis</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-/* GUIDELINES */
-.guidelines li {
-  margin-bottom: 6px;
-}
+  <!-- Nephrology -->
+  <section class="system">
+    <h2>🩺 Nephrology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Chronic Kidney Disease</a>
+      <a href="#" class="disease-card">Acute Kidney Injury</a>
+      <a href="#" class="disease-card">Electrolyte Disorders</a>
+      <a href="#" class="disease-card">Dialysis</a>
+      <a href="#" class="disease-card">Nephrotic Syndrome</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.guidelines a {
-  text-decoration: none;
-  color: #a05470;
-}
+  <!-- Gastroenterology -->
+  <section class="system">
+    <h2>🫃 Gastroenterology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">GERD</a>
+      <a href="#" class="disease-card">Peptic Ulcer Disease</a>
+      <a href="#" class="disease-card">IBD</a>
+      <a href="#" class="disease-card">Cirrhosis</a>
+      <a href="#" class="disease-card">Hepatitis</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.guidelines a:hover {
-  text-decoration: underline;
-}
+  <!-- Neurology -->
+  <section class="system">
+    <h2>🧠 Neurology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Stroke</a>
+      <a href="#" class="disease-card">Epilepsy</a>
+      <a href="#" class="disease-card">Parkinson’s Disease</a>
+      <a href="#" class="disease-card">Alzheimer’s Disease</a>
+      <a href="#" class="disease-card">Migraine</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-/* IMAGE PLACEHOLDER */
-.image-placeholder {
-  background-color: #f7dce5;
-  padding: 25px;
-  border-radius: 12px;
-  margin: 15px 0 30px 0;
-  text-align: center;
-  font-style: italic;
-  color: #8a3f59;
-}
+  <!-- Psychiatry -->
+  <section class="system">
+    <h2>🧠 Psychiatry</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Depression</a>
+      <a href="#" class="disease-card">Anxiety</a>
+      <a href="#" class="disease-card">Bipolar Disorder</a>
+      <a href="#" class="disease-card">Schizophrenia</a>
+      <a href="#" class="disease-card">ADHD</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-/* FLOWCHART */
-.flowchart {
-  margin: 25px 0;
-}
+  <!-- Rheumatology -->
+  <section class="system">
+    <h2>🦴 Rheumatology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Rheumatoid Arthritis</a>
+      <a href="#" class="disease-card">Osteoarthritis</a>
+      <a href="#" class="disease-card">Gout</a>
+      <a href="#" class="disease-card">Lupus</a>
+      <a href="#" class="disease-card">Vasculitis</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.flow-box {
-  background-color: #f7dce5;
-  padding: 15px 20px;
-  border-radius: 12px;
-  text-align: center;
-  margin: 10px auto;
-  max-width: 600px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-}
+  <!-- Dermatology -->
+  <section class="system">
+    <h2>🧴 Dermatology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Atopic Dermatitis</a>
+      <a href="#" class="disease-card">Psoriasis</a>
+      <a href="#" class="disease-card">Acne</a>
+      <a href="#" class="disease-card">Rosacea</a>
+      <a href="#" class="disease-card">Fungal Infections</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.flow-box.small {
-  max-width: 400px;
-  font-size: 14px;
-}
+  <!-- Oncology -->
+  <section class="system">
+    <h2>🎗 Oncology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Breast Cancer</a>
+      <a href="#" class="disease-card">Lung Cancer</a>
+      <a href="#" class="disease-card">Colorectal Cancer</a>
+      <a href="#" class="disease-card">Leukemia</a>
+      <a href="#" class="disease-card">Supportive Care</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.flow-arrow {
-  text-align: center;
-  font-size: 20px;
-  margin: 8px 0;
-  color: #a05470;
-}
+  <!-- Women’s Health -->
+  <section class="system">
+    <h2>👩 Women’s Health</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Contraception</a>
+      <a href="#" class="disease-card">Menopause</a>
+      <a href="#" class="disease-card">Endometriosis</a>
+      <a href="#" class="disease-card">Infertility</a>
+      <a href="#" class="disease-card">PCOS</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.branch-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
+  <!-- Pediatrics -->
+  <section class="system">
+    <h2>🧒 Pediatrics</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Pediatric Asthma</a>
+      <a href="#" class="disease-card">Otitis Media</a>
+      <a href="#" class="disease-card">Croup</a>
+      <a href="#" class="disease-card">Pediatric CAP</a>
+      <a href="#" class="disease-card">Pediatric Dosing</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.flow-branch {
-  text-align: center;
-  margin: 10px;
-}
+  <!-- Emergency -->
+  <section class="system">
+    <h2>🚨 Emergency & Toxicology</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">DKA / HHS</a>
+      <a href="#" class="disease-card">Acute Electrolyte Emergencies</a>
+      <a href="#" class="disease-card">Overdose Management</a>
+      <a href="#" class="disease-card">Anaphylaxis</a>
+      <a href="#" class="disease-card">Hypertensive Emergency</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-.branch-title {
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #a05470;
-}
+  <!-- Geriatrics -->
+  <section class="system">
+    <h2>👵 Geriatrics</h2>
+    <div class="card-grid">
+      <a href="#" class="disease-card">Polypharmacy</a>
+      <a href="#" class="disease-card">Beers Criteria</a>
+      <a href="#" class="disease-card">Dementia Management</a>
+      <a href="#" class="disease-card">Falls</a>
+      <a href="#" class="disease-card">Deprescribing</a>
+      <a href="#" class="disease-card show-more-card">+ See More</a>
+    </div>
+  </section>
 
-/* DRUG TABLE */
-.drug-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  background-color: #f7dce5;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-}
+  <!-- ================= PRECISION ================= -->
 
-.drug-table th {
-  background-color: #eec2d1;
-  padding: 14px;
-  text-align: left;
-  font-weight: 600;
-  border-right: 1px solid #d38fa7;
-}
+  <h2 class="section-divider">🧬 Precision & Drug Science</h2>
 
-.drug-table td {
-  padding: 14px;
-  vertical-align: top;
-  border-right: 1px solid #e3a9bc;
-  border-top: 1px solid #e3a9bc;
-}
+  <section class="system">
+    <div class="card-grid">
+      <a href="#" class="disease-card">Pharmacokinetics</a>
+      <a href="#" class="disease-card">Pharmacogenomics</a>
+    </div>
+  </section>
 
-.drug-table th:last-child,
-.drug-table td:last-child {
-  border-right: none;
-}
+  <!-- ================= FOUNDATIONS ================= -->
 
-.drug-table tr:hover td {
-  background-color: #fbe6ee;
-}
+  <h2 class="section-divider">📚 Pharmacist Foundations</h2>
+
+  <section class="system">
+    <div class="card-grid">
+      <a href="#" class="disease-card">Pharmacy Law</a>
+      <a href="#" class="disease-card">Pharmacy Calculations</a>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
