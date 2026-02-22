@@ -45,7 +45,6 @@ header {
   padding: 50px 80px;
 }
 
-/* ORGAN SYSTEM */
 .system {
   margin-bottom: 60px;
 }
@@ -56,14 +55,12 @@ header {
   margin-bottom: 15px;
 }
 
-/* GRID */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* DISEASE CARD */
 .disease-card {
   background-color: #f7dce5;
   padding: 30px;
@@ -72,6 +69,8 @@ header {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   transition: all 0.25s ease;
 }
@@ -82,7 +81,6 @@ header {
   box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
-/* SHOW MORE CARD */
 .show-more-card {
   background-color: transparent;
   border: 2px dashed #d38fa7;
@@ -92,4 +90,30 @@ header {
 
 .show-more-card:hover {
   background-color: #f7dce5;
+}
+
+/* DISEASE PAGE */
+.disease-page {
+  padding: 50px 80px;
+}
+
+.disease-page h2 {
+  margin-top: 40px;
+  color: #a05470;
+}
+
+.disease-page h3 {
+  margin-top: 20px;
+}
+
+.guidelines li {
+  margin-bottom: 6px;
+}
+
+.drug-block {
+  background-color: #f7dce5;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
