@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #fdf7f9; /* very soft blush */
+  font-family: 'Inter', sans-serif;
+  background-color: #fdf7f9;
   color: #2a2a2a;
 }
 
 /* Header */
 header {
-  background-color: #c48fa1; /* muted dusty rose */
+  background-color: #c48fa1;
   color: white;
   padding: 22px;
 }
@@ -19,9 +19,8 @@ header {
 }
 
 .logo {
-  font-size: 38px;
+  font-size: 36px;
   margin-right: 14px;
-  opacity: 0.95;
 }
 
 .title-block {
@@ -30,15 +29,16 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 34px;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .subtitle {
-  margin-top: 4px;
+  margin-top: 6px;
   font-size: 13px;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 /* Search bar */
@@ -47,7 +47,7 @@ header h1 {
   padding: 10px;
   width: 60%;
   max-width: 500px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: none;
   font-size: 14px;
 }
@@ -60,7 +60,7 @@ header h1 {
 /* Sidebar */
 .sidebar {
   width: 260px;
-  background-color: #f6e6ec; /* soft rose tint */
+  background-color: #f6e6ec;
   padding: 22px;
   border-right: 1px solid #e8cfd8;
   height: calc(100vh - 120px);
@@ -70,6 +70,7 @@ header h1 {
 .sidebar h3 {
   margin-top: 0;
   font-weight: 600;
+  font-family: 'Playfair Display', serif;
 }
 
 .sidebar ul {
@@ -105,5 +106,6 @@ header h1 {
 
 .content h2 {
   margin-top: 0;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
