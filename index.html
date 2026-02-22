@@ -12,56 +12,49 @@
 <body>
 
 <header>
-  <div class="sparkle"></div>
   <div class="title-block">
     <h1 class="main-title">🎀 The Pharm Bible 🎀</h1>
     <p class="subtitle">Taylor’s Very Serious Drug Reference Center</p>
-    <input type="text" id="searchBar" placeholder="Search drugs, side effects, guidelines...">
+    <input type="text" id="searchBar" placeholder="Search disease states...">
   </div>
 </header>
 
-<div class="container">
+<main class="dashboard">
 
-  <nav class="sidebar">
-    <h3>Organ Systems</h3>
-    <ul>
-      <li><strong>Core Systems</strong></li>
-      <li>❤️ Cardiology</li>
-      <li>🧠 Endocrinology</li>
-      <li>🫁 Pulmonology</li>
-      <li>🩺 Gastroenterology</li>
-      <li>💧 Nephrology</li>
-      <li>🧠 Neurology</li>
-      <li>💭 Psychiatry</li>
-      <li>🦠 Infectious Disease</li>
-      <li>🩸 Hematology</li>
-      <li>🎗 Oncology</li>
-      <li>🦴 Rheumatology</li>
-      <li>🌸 Dermatology</li>
-      <li>🦵 Musculoskeletal</li>
+  <!-- CARDIOLOGY -->
+  <section>
+    <h2 class="system-title">❤️ Cardiology</h2>
+    <div class="card-grid">
+      <div class="disease-card">Hypertension</div>
+      <div class="disease-card">Heart Failure</div>
+      <div class="disease-card">Atrial Fibrillation</div>
+      <div class="disease-card">Coronary Artery Disease</div>
+      <div class="disease-card">Hyperlipidemia</div>
+    </div>
+  </section>
 
-      <li><strong>Special Populations</strong></li>
-      <li>👩‍⚕️ Women’s Health</li>
-      <li>🧸 Pediatrics</li>
-      <li>👵 Geriatrics</li>
+  <!-- ENDOCRINOLOGY -->
+  <section>
+    <h2 class="system-title">🧠 Endocrinology</h2>
+    <div class="card-grid">
+      <div class="disease-card">Diabetes</div>
+      <div class="disease-card">Hypothyroidism</div>
+      <div class="disease-card">Hyperthyroidism</div>
+      <div class="disease-card">Adrenal Disorders</div>
+    </div>
+  </section>
 
-      <li><strong>Clinical Support</strong></li>
-      <li>🚑 Emergency & Toxicology</li>
-      <li>🛡 Preventive Care & Screening</li>
-      <li>💉 Anticoagulation & Procedures</li>
-      <li>✨ Miscellaneous</li>
-    </ul>
-  </nav>
+  <!-- PULMONOLOGY -->
+  <section>
+    <h2 class="system-title">🫁 Pulmonology</h2>
+    <div class="card-grid">
+      <div class="disease-card">Asthma</div>
+      <div class="disease-card">COPD</div>
+      <div class="disease-card">Pneumonia</div>
+    </div>
+  </section>
 
-  <main class="content">
-    <section>
-      <h2>Welcome</h2>
-      <p>This is your centralized clinical reference system.</p>
-      <p>Select an organ system from the left to begin building your database.</p>
-    </section>
-  </main>
-
-</div>
+</main>
 
 </body>
 </html>
