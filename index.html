@@ -8,9 +8,16 @@
 <body>
 
 <header>
-  <h1>The Pharm Bible</h1>
-  <p class="subtitle">A Clinical Therapeutics Knowledge System</p>
-  <input type="text" id="searchBar" placeholder="Search drugs, side effects, guidelines..." onkeyup="searchContent()">
+  <div class="header-container">
+    <div class="logo">
+      📖
+    </div>
+    <div class="title-block">
+      <h1>The Pharm Bible</h1>
+      <p class="subtitle">A Clinical Therapeutics Knowledge System</p>
+      <input type="text" id="searchBar" placeholder="Search drugs, side effects, guidelines..." onkeyup="searchContent()">
+    </div>
+  </div>
 </header>
 
 <div class="container">
@@ -46,7 +53,7 @@
     </ul>
   </nav>
 
-  <main class="content" id="mainContent">
+  <main class="content">
     <section>
       <h2>Welcome</h2>
       <p>This is your centralized clinical reference system.</p>
@@ -56,6 +63,15 @@
 
 </div>
 
-<script src="script.js"></script>
+<script>
+function searchContent() {
+  let input = document.getElementById("searchBar").value.toLowerCase();
+  let content = document.body.innerText.toLowerCase();
+  if (content.includes(input)) {
+    console.log("Match found");
+  }
+}
+</script>
+
 </body>
 </html>
